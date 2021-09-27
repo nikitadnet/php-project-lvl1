@@ -1,15 +1,21 @@
 {
     "name": "hexlet/code",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
     },
+    "bin": [
+        "bin/brain-games"
+    ],
     "authors": [
         {
             "name": "Nikita Demchenko",
             "email": "demchenkonikitko@gmail.com"
         }
     ],
+    "description": "hexlet php-package",
+    "license": "MIT",
     "require": {}
 }
