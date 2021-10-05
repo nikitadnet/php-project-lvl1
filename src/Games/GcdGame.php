@@ -20,9 +20,10 @@ function getGcd($firstNumber, $secondNumber)
         $secondNumber = $temp;
     }
 
-    for($i = 1; $i < ($firstNumber + 1); $i++) {
-        if ($firstNumber % $i == 0 && $secondNumber % $i == 0)
+    for ($i = 1; $i < ($firstNumber + 1); $i++) {
+        if ($firstNumber % $i == 0 && $secondNumber % $i == 0) {
             $gcd = $i;
+        }
     }
 
     return $gcd;
@@ -50,6 +51,5 @@ function gcdGame()
         if (checkRound($answerCounter)) {
             congratulateWinner($userName);
         }
-
     }
 }
